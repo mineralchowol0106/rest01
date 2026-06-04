@@ -401,10 +401,36 @@
       pointer-events: none;
     }
 
+    /* ── HERO SHAPES ── */
+    .hero-shapes {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hs-wrap {
+      position: absolute;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    .hs-wrap.pop { animation: hsPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+    @keyframes hsPop {
+      0%   { transform: scale(1); }
+      45%  { transform: scale(2.5); }
+      100% { transform: scale(1); }
+    }
+    .hs-float { animation: hsFloat var(--dur, 7s) var(--del, 0s) ease-in-out infinite; }
+    @keyframes hsFloat {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-14px); }
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       section { padding: 3.5rem 1.2rem; }
       .hero-photo { width: 140px; height: 140px; }
+      .hero-shapes { display: none; }
     }
   </style>
 </head>
@@ -412,6 +438,69 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <div class="hero-shapes">
+
+    <!-- 1. Sparkle -->
+    <div class="hs-wrap" style="top:8%;left:4%"><div class="hs-float" style="--dur:7s;--del:0s">
+      <svg width="58" height="58" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF6B9D"/><stop offset="100%" stop-color="#C05299"/></linearGradient></defs><path d="M50,2 L57,43 L98,50 L57,57 L50,98 L43,57 L2,50 L43,43 Z" fill="url(#hg1)"/></svg>
+    </div></div>
+
+    <!-- 2. Diamond -->
+    <div class="hs-wrap" style="top:10%;left:82%"><div class="hs-float" style="--dur:5.5s;--del:-1.5s">
+      <svg width="50" height="50" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF9D6B"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs><path d="M50,2 L98,50 L50,98 L2,50 Z" fill="url(#hg2)"/></svg>
+    </div></div>
+
+    <!-- 3. Circle -->
+    <div class="hs-wrap" style="top:24%;left:90%"><div class="hs-float" style="--dur:8s;--del:-3s">
+      <svg width="54" height="54" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#C05299"/></linearGradient></defs><circle cx="50" cy="50" r="46" fill="url(#hg3)"/></svg>
+    </div></div>
+
+    <!-- 4. 5-pointed Star -->
+    <div class="hs-wrap" style="top:18%;left:8%"><div class="hs-float" style="--dur:6.5s;--del:-2s">
+      <svg width="46" height="46" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFB347"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs><path d="M50,4 L61,35 L95,35 L68,56 L78,90 L50,72 L22,90 L32,56 L5,35 L39,35 Z" fill="url(#hg4)"/></svg>
+    </div></div>
+
+    <!-- 5. Hexagon -->
+    <div class="hs-wrap" style="top:40%;left:2%"><div class="hs-float" style="--dur:7.5s;--del:-1s">
+      <svg width="58" height="58" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF6B6B"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs><path d="M50,2 L90,25 L90,75 L50,98 L10,75 L10,25 Z" fill="url(#hg5)"/></svg>
+    </div></div>
+
+    <!-- 6. Rounded Square -->
+    <div class="hs-wrap" style="top:36%;left:86%"><div class="hs-float" style="--dur:6s;--del:-4s">
+      <svg width="52" height="52" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6B9DFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs><rect x="4" y="4" width="92" height="92" rx="22" ry="22" fill="url(#hg6)"/></svg>
+    </div></div>
+
+    <!-- 7. Shield -->
+    <div class="hs-wrap" style="top:58%;left:5%"><div class="hs-float" style="--dur:8.5s;--del:-2.5s">
+      <svg width="54" height="54" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7B61FF"/><stop offset="100%" stop-color="#C05299"/></linearGradient></defs><path d="M50,2 L96,22 L96,58 L50,98 L4,58 L4,22 Z" fill="url(#hg7)"/></svg>
+    </div></div>
+
+    <!-- 8. Triangle -->
+    <div class="hs-wrap" style="top:62%;left:84%"><div class="hs-float" style="--dur:6.8s;--del:-0.5s">
+      <svg width="50" height="50" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg8" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#43D9A2"/><stop offset="100%" stop-color="#4FB7FF"/></linearGradient></defs><path d="M50,4 L96,96 L4,96 Z" fill="url(#hg8)"/></svg>
+    </div></div>
+
+    <!-- 9. Cross -->
+    <div class="hs-wrap" style="top:72%;left:12%"><div class="hs-float" style="--dur:7.2s;--del:-3.5s">
+      <svg width="46" height="46" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg9" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFB3D0"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs><path d="M35,2 L65,2 L65,35 L98,35 L98,65 L65,65 L65,98 L35,98 L35,65 L2,65 L2,35 L35,35 Z" fill="url(#hg9)"/></svg>
+    </div></div>
+
+    <!-- 10. Pentagon -->
+    <div class="hs-wrap" style="top:70%;left:80%"><div class="hs-float" style="--dur:5.8s;--del:-1.8s">
+      <svg width="54" height="54" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg10" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF8C42"/><stop offset="100%" stop-color="#FF6B9D"/></linearGradient></defs><path d="M50,2 L97,36 L79,94 L21,94 L3,36 Z" fill="url(#hg10)"/></svg>
+    </div></div>
+
+    <!-- 11. Arrow -->
+    <div class="hs-wrap" style="top:83%;left:28%"><div class="hs-float" style="--dur:6.3s;--del:-2.8s">
+      <svg width="48" height="48" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg11" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF6B9D"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs><path d="M4,35 L60,35 L60,12 L96,50 L60,88 L60,65 L4,65 Z" fill="url(#hg11)"/></svg>
+    </div></div>
+
+    <!-- 12. Bowtie -->
+    <div class="hs-wrap" style="top:82%;left:65%"><div class="hs-float" style="--dur:7.8s;--del:-4.5s">
+      <svg width="50" height="50" viewBox="0 0 100 100" opacity=".72"><defs><linearGradient id="hg12" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C05299"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs><path d="M2,2 L98,2 L52,50 L98,98 L2,98 L48,50 Z" fill="url(#hg12)"/></svg>
+    </div></div>
+
+  </div>
   <canvas id="hero-canvas"></canvas>
   <div class="hero-inner">
     <div class="hero-photo-wrap">
@@ -651,6 +740,16 @@
   }, { threshold: 0.15 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Shape click pop
+  document.querySelectorAll('.hs-wrap').forEach(el => {
+    el.addEventListener('click', () => {
+      el.classList.remove('pop');
+      void el.offsetWidth;
+      el.classList.add('pop');
+      el.addEventListener('animationend', () => el.classList.remove('pop'), { once: true });
+    });
+  });
 
   // Hero particle animation
   (function () {
