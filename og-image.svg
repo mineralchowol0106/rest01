@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1B2A"/>
+      <stop offset="100%" stop-color="#1A0A32"/>
+    </linearGradient>
+    <linearGradient id="ogPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B9D"/>
+      <stop offset="50%" stop-color="#C05299"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="ogLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B9D"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="glowTR" cx="88%" cy="18%" r="38%">
+      <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBL" cx="8%" cy="88%" r="30%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#glowTR)"/>
+  <rect width="1200" height="630" fill="url(#glowBL)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="url(#ogLine)"/>
+
+  <!-- Top-right decorative circles -->
+  <circle cx="1000" cy="155" r="240" fill="none" stroke="#FF6B9D" stroke-width="1" opacity="0.07"/>
+  <circle cx="1000" cy="155" r="175" fill="none" stroke="#C05299" stroke-width="1" opacity="0.09"/>
+  <circle cx="1000" cy="155" r="110" fill="none" stroke="#8B5CF6" stroke-width="1.5" opacity="0.12"/>
+  <circle cx="1000" cy="155" r="52" fill="#FF6B9D" opacity="0.06"/>
+
+  <!-- Bottom-left decorative circle -->
+  <circle cx="140" cy="558" r="140" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.1"/>
+
+  <!-- Sparkle top-right -->
+  <path d="M1068,54 L1075,80 L1101,87 L1075,94 L1068,120 L1061,94 L1035,87 L1061,80 Z" fill="#FF6B9D" opacity="0.55"/>
+
+  <!-- Sparkle mid-right -->
+  <path d="M878,415 L883,432 L900,437 L883,442 L878,459 L873,442 L856,437 L873,432 Z" fill="#8B5CF6" opacity="0.42"/>
+
+  <!-- Small diamond right -->
+  <path d="M1090,308 L1106,330 L1090,352 L1074,330 Z" fill="#C05299" opacity="0.38"/>
+  <path d="M968,516 L980,534 L968,552 L956,534 Z" fill="#FF6B9D" opacity="0.3"/>
+
+  <!-- Hexagon outline -->
+  <path d="M840,250 L882,227 L924,250 L924,296 L882,319 L840,296 Z" fill="none" stroke="url(#ogPink)" stroke-width="1.5" opacity="0.18"/>
+
+  <!-- Dot cluster top-center -->
+  <circle cx="740" cy="76" r="2.5" fill="#FF6B9D" opacity="0.3"/>
+  <circle cx="792" cy="58" r="2"   fill="#C05299" opacity="0.25"/>
+  <circle cx="848" cy="88" r="2"   fill="#8B5CF6" opacity="0.25"/>
+  <circle cx="762" cy="125" r="1.5" fill="#FF6B9D" opacity="0.2"/>
+  <circle cx="820" cy="108" r="1.5" fill="#C05299" opacity="0.2"/>
+
+  <!-- Dot cluster bottom-right -->
+  <circle cx="1005" cy="578" r="2.5" fill="#8B5CF6" opacity="0.25"/>
+  <circle cx="1055" cy="558" r="2"   fill="#C05299" opacity="0.2"/>
+  <circle cx="1108" cy="590" r="2"   fill="#FF6B9D" opacity="0.2"/>
+
+  <!-- === MAIN CONTENT === -->
+
+  <!-- PORTFOLIO · RESUME label -->
+  <text x="100" y="148"
+    font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif"
+    font-size="13" font-weight="400" fill="rgba(255,255,255,0.38)"
+    letter-spacing="0.35em">PORTFOLIO  ·  RESUME</text>
+
+  <!-- Subtitle: 한국의 웹개발 전문가 (gradient via fill url) -->
+  <text x="100" y="208"
+    font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif"
+    font-size="30" font-weight="400" fill="url(#ogPink)"
+    letter-spacing="0.14em">한국의 웹개발 전문가</text>
+
+  <!-- Main name: 이초월 -->
+  <text x="95" y="345"
+    font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif"
+    font-size="105" font-weight="900" fill="white"
+    letter-spacing="0.04em">이초월</text>
+
+  <!-- Gradient accent line -->
+  <rect x="100" y="370" width="280" height="4" rx="2" fill="url(#ogLine)"/>
+
+  <!-- Tags row -->
+  <text x="100" y="430"
+    font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif"
+    font-size="18" fill="rgba(255,255,255,0.5)"
+    letter-spacing="0.07em">디지털미디어디자인  ·  패션디자인  ·  이미지 컨설팅  ·  콘텐츠 제작</text>
+
+  <!-- Email -->
+  <text x="100" y="476"
+    font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif"
+    font-size="16" fill="rgba(255,255,255,0.38)"
+    letter-spacing="0.05em">healmeanliv@gmail.com  ·  010-8902-7990</text>
+
+  <!-- Horizontal rule -->
+  <rect x="100" y="558" width="1000" height="1" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- URL bottom-left -->
+  <text x="100" y="594"
+    font-family="'SF Mono','Consolas','Courier New',monospace"
+    font-size="14" fill="rgba(255,255,255,0.28)"
+    letter-spacing="0.05em">mineralchowol0106.github.io/rest01</text>
+
+  <!-- Year bottom-right -->
+  <text x="1100" y="594"
+    font-family="'Noto Sans KR',sans-serif"
+    font-size="14" fill="rgba(255,255,255,0.2)"
+    text-anchor="end">© 2025 이초월</text>
+</svg>
